@@ -1,0 +1,102 @@
+
+
+.detalhe-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.detalhe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.detalhe-grid p {
+  margin: 5px 0;
+}
+
+
+.detalhe-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.detalhe-card h2 {
+  color: #1c608a;
+  border-bottom: 2px solid #0078bd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.detalhe-card p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.detalhe-card strong {
+  color: #2685bf;
+}
+
+
+
+embed {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.detalhe-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.detalhe-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+.detalhe-button-aceitar {
+  background-color: #40916c;
+  color: white;
+}
+
+.detalhe-button-aceitar:hover {
+  background-color: #2d6a4f;
+}
+
+.detalhe-button-indeferir {
+  background-color: #d62828;
+  color: white;
+}
+
+.detalhe-button-indeferir:hover {
+  background-color: #9b2226;
+}
+
+
+@media (max-width: 768px) {
+  .detalhe-container {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .detalhe-buttons {
+      flex-direction: column;
+  }
+
+  .detalhe-button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}

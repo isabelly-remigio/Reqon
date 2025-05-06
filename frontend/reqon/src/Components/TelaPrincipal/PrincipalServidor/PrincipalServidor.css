@@ -1,0 +1,92 @@
+/* Estilização geral */
+.p-4 {
+  padding: 20px;
+}
+
+/* Estilização do título */
+.nome {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Verde escuro */
+  margin-bottom: 20px;
+}
+
+/* Estilização da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  /* Adicionando responsividade */
+  table-layout: fixed; /* Força a tabela a ser ajustada */
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Cabeçalho da tabela */
+thead tr {
+  background-color: #37548b; /* Verde escuro */
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternando cores das linhas */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #c8dfe6; /* Verde claro */
+  transition: 0.3s;
+}
+
+/* Botão "Ver Detalhes" */
+button {
+  background-color: #46a4c0; /* Verde médio */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; /* Faz a tabela rolar horizontalmente em telas pequenas */
+  }
+
+  table {
+    min-width: 600px; /* A tabela deve ter uma largura mínima para evitar distorção */
+  }
+
+  th, td {
+    padding: 8px; /* Reduz o padding para melhor adaptação */
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex: dispositivos móveis) */
+@media (max-width: 480px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 400px; /* Garante que a tabela não quebre muito em telas pequenas */
+  }
+
+  th, td {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+  }
+}

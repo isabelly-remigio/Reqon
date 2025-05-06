@@ -1,0 +1,170 @@
+/* Container geral do perfil */
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 15px; }
+
+
+.perfil-card {
+  background: white;
+  width: 100%; 
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.perfil-card h2 {
+  margin-bottom: 15px;
+  color: #2685bf;
+  text-align: center;
+}
+
+.perfil-info {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+
+/* Itens da lista de detalhes */
+.perfil-info p {
+  margin: 8px 0;
+  width: 45%; /* Definindo duas colunas por linha */
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Link de edição */
+.perfil-editar-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #2685bf;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+  cursor: pointer;
+}
+
+.perfil-editar-btn:hover {
+  text-decoration: none;
+}
+
+/* Responsividade para o card */
+@media (max-width: 768px) {
+  .perfil-card {
+      width: 100%; /* O card vai ocupar toda a largura disponível */
+      padding: 15px; /* Reduz o padding */
+  }
+
+  /* Ajustando os itens da lista para ocupar toda a largura em telas pequenas */
+  .perfil-info p {
+      width: 100%; /* Itens ocupando 100% da largura do card */
+  }
+
+  /* Ajustando o título */
+  .perfil-card h2 {
+      font-size: 20px; /* Reduzindo o tamanho da fonte */
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #2685bf;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.navbar .logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Ajuste para o conteúdo de edição */
+.container-editar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  margin-top: 90px;
+}
+
+.card-editar {
+  background-color: rgba(252, 252, 252, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 800px;
+}
+
+/* Responsividade para o conteúdo de edição */
+@media (max-width: 768px) {
+  .card-editar {
+      width: 90%; /* O card de edição vai ocupar 90% da largura da tela */
+      padding: 20px; /* Ajuste do padding para telas menores */
+  }
+
+  .grid-editar {
+      grid-template-columns: 1fr; /* Empilhamento dos campos de edição */
+  }
+}
+
+/* Grid de edição */
+.grid-editar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.label-editar {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input-editar {
+  padding: 8px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.808);
+  color: rgb(110, 73, 73);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.footer-editar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-editar {
+  color: #2685bf;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+  cursor: pointer;
+}
+
+.header-editar{
+  color: white;
+  text-align: center;
+}
